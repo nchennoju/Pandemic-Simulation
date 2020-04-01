@@ -10,7 +10,7 @@ MAX_Y_SPEED = 2
 #DISEASE CONSTANTS
 NUMBER_INFECTED = 1
 DISEASE_RANGE = 20
-INFECTION_PERIOD = 2000
+INFECTION_PERIOD = 1000
 
 #WORLD CONSTANTS
 WORLD_HEIGHT = 800
@@ -93,12 +93,13 @@ while True:
         if(people[i].infected and not people[i].immune):
             for j in range(len(people)):
                 if (j != i):
-                    if (people[i].distance(people[j]) <= DISEASE_RANGE and not people[j].infected):
+                    if (people[i].distance(people[j]) <= DISEASE_RANGE and not people[j].infected and not people[j].immune):
                         people[j].infected = True
                         canvas.itemconfigure(canvasP[j], fill='white', outline='red')
             people[i].timeInfected += 1
             if(people[i].timeInfected >= INFECTION_PERIOD):
                 people[i].immune = True
+                people[i].infected = False
                 canvas.itemconfigure(canvasP[i], fill='red', outline='white')
 
 
