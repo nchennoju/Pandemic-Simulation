@@ -8,4 +8,6 @@ Considering that the pandemic we face today is mainly caused by the nature of th
 
 https://docs.google.com/spreadsheets/d/1CGfinO79gIaCr5NPdpm0vchjbplvjdE09eobx-bwxKg/edit?usp=sharing
 
+More info on my blog: https://www.public.asu.edu/~nchennoj/blog.html
+
 ![Pandemic Sim](https://github.com/nchennoju/Pandemic-Simulation/blob/master/post3.png)
